@@ -2,7 +2,7 @@ import React from 'react';
 import { useSelector } from 'react-redux';
 
 const Tasks = () => {
-  const tasks = useSelector((state) => state.tasksStore.tasks);
+  const tasks = useSelector((state) => state.tasks.tasks);
 
   if (tasks.length === 0) {
     return null;
